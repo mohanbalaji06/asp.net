@@ -1,0 +1,12 @@
+It  contains code for the login account and logout functionality.
+
+It does not have code for the user registeration.
+
+
+description:
+
+1.we need to create a model for the designed database or create model first, database based on model.( you can use any approach, but i used database first model).
+2.create a controller and views to display login UI.
+3.create action method to validate the data entered by the user in the controller from the database.
+4.if the details are valid one the display the successful page and logout option.
+5.if he clicks on to the logout, return to the login page again.
