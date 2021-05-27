@@ -10,3 +10,8 @@ description:
 3.create action method to validate the data entered by the user in the controller from the database.
 4.if the details are valid one the display the successful page and logout option.
 5.if he clicks on to the logout, return to the login page again.
+
+Note:
+1.Configure the route.config file correctly.
+2.Configure the process flow and data correclty.
+3.make sure of database connection in the application.
