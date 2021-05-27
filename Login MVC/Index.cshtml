@@ -1,0 +1,34 @@
+﻿
+@model MvcApplication.Models.login
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@using (Html.BeginForm("LogInUser", "Login", FormMethod.Post))
+{ 
+    <div style="display:flexbox; flex-align:center; flex-item-align:center;">
+        <fieldset style="text-align:center; height:auto;width:300px;">
+            <legend>Log In</legend>
+            <table>
+
+                <tr>
+                    <td>@Html.DisplayNameFor(model => model.username)</td>
+                    <td>@Html.TextBoxFor(model => model.username)</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.DisplayNameFor(model => model.password)</td>
+                    <td>@Html.TextBoxFor(model=> model.password)</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Log In" /></td>
+                </tr>
+
+
+            </table>
+        </fieldset>
+    </div>
+}

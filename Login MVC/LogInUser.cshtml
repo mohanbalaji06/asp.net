@@ -1,0 +1,18 @@
+﻿@model MvcApplication.Models.login
+
+@{
+    ViewBag.Title = "LogInUser";
+}
+
+<h2>LogInUser Successful...!</h2>
+
+<div>
+    @using(Html.BeginForm("LogOut","Login"))
+    {
+    
+        <input type="submit" value="Log Out"/>
+    
+    }
+  
+</div>
+
