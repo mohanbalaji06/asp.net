@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,14 +23,17 @@ namespace MvcApplication.Controllers
         public ActionResult LogInUser(login user)
         {
             studentdbEntities ctx = new studentdbEntities();
-
-            IList<login> name = ctx.logins.SqlQuery("select * from login where username='"+ user.username+"' and password='"+user.password+"'").ToList<login>();
-
-            if (name != null) {
+            IList<login> name = ctx.logins.SqlQuery("select * from login where username='"+user.username+"' and password='"+user.password+"'").ToList<login>();
+            if (name.Any())
+            {
                 return View();
             }
+            else {
+                return View("LogOut"); 
+            }
 
-            return View(); 
+
+            
         }
 
         [HttpGet]
