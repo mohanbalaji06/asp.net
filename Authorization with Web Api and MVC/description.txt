@@ -1,0 +1,5 @@
+In this there are two project files: 1.MVC 2.Web Api
+
+1.mvc acts as the view to the user.
+
+2.Web Api acts as data provider to the mvc.
